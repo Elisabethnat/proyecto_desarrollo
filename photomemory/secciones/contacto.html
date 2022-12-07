@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../estilos/estilos.css" />
+    <title>Contacto</title>
+    <style>
+      fieldset {
+          border: 1px solid red
+      }
+  </style>
+  </head>
+
+  <body>
+    <!-- SECCION ENCABEZADO Y BARRA DE NAVEGACION -->
+    <div class="grid-container">
+      <header class="header">
+        <div class="logo">
+          <a href="../index.html">Photomemory</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- SECCION PRICNCIPAL -->
+      <form action="https://formspree.io/f/mdojprey" method="POST"></form>
+      <main class="main">
+        <h1 class="tituloSection">Contacto</h1>
+        <section>
+          <article>
+            <form action="#">
+              <label for="nombre">Ingrese su nombre</label><br>
+              <input type="text" name="nombre" /><br>
+              
+              <label for="email">Ingrese su email</label><br>
+              <input type="email" name="email" /><br>
+              <div>
+                <label for="">Comentarios</label><br>
+                <textarea name="comentarios"></textarea>
+            </div><br>
+              <div>
+                <p>Selecciona el género</p><br>
+                <label
+                  >Masculino
+                  <input type="radio" name="genero" value="masculino" />
+                </label>
+                <label
+                  >Femenino
+                  <input type="radio" name="genero" value="femenino" />
+                </label>
+              </div><br>
+
+              <div>
+                <p>Seleccione el día que desee ser contactado</p><br>
+                <select name="dia" id=""><br>
+                  <option value="lunes">Lunes</option>
+                  <option value="martes">Martes</option>
+                  <option value="miercoles">Miércoles</option>
+                  <option value="jueves">Jueves</option>
+                  <option value="viernes">Viernes</option>
+                </select>
+              </div><br>
+
+              <div>
+                <p>Desea recibir información sobre nuestras ofertas</p><br>
+                <input type="checkbox" name="acepta" value="1" />
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpiar formulario" />
+              </div>
+            </form>
+          </article>
+        </section>
+      </main>
+
+      <!-- SECCION PIE DE PAGINA -->
+      <footer class="footer footerSection">
+        <ul>
+          <li>Castex 1228</li>
+          <li>Cell:1141325690</li>
+          <li>Palermo Buenos Aires - Argentina</li>
+          <li>CP 90121</li>
+        </ul>
+        <div class="socialMedia">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </footer>
+    </div>
+    <!-- A O S -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
